@@ -22,13 +22,6 @@ y_test = y_test.astype(np.float32)
 #X_train = X_train.astype(np.float32)
 #y_train = y_train.astype(np.float32)
 
-X_test[:1].to_csv('./datasets/higgs1.csv')
-X_test[:100].to_csv('./datasets/higgs100.csv')
-X_test[:1000].to_csv('./datasets/higgs1K.csv')
-X_test[:10000].to_csv('./datasets/higgs10K.csv')
-X_test[:100000].to_csv('./datasets/higgs100K.csv')
-X_test[:1000000].to_csv('./datasets/higgs1M.csv')
-
 
 #################################################################################################
 
@@ -44,34 +37,34 @@ fm = ForestInference.load(filename=model_path,
                           model_type='xgboost')
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:100])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:10000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:100000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1000000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
@@ -92,34 +85,34 @@ fm = ForestInference.load(filename=model_path,
                           model_type='xgboost')
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:100])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:10000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:100000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1000000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
@@ -139,34 +132,34 @@ fm = ForestInference.load(filename=model_path,
                           model_type='xgboost')
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:100])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:10000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:100000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1000000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
@@ -186,34 +179,34 @@ fm = ForestInference.load(filename=model_path,
                           model_type='xgboost')
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:100])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:10000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:100000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-fil_preds = fm.predict(X_test[:1000000])
+fil_preds = fm.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'))
 end = (time.time() - start_time)*1000
 print(end)
 
