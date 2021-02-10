@@ -65,27 +65,27 @@ print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs100, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs100, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs1K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs1K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs10K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs10K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs100K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs100K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs1M, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs1M, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
@@ -109,27 +109,27 @@ print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs100, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs100, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs1K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs1K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs10K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs10K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs100K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs100K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs1M, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs1M, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 #############################################################################################################
@@ -153,27 +153,27 @@ print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs100, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs100, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs1K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs1K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs10K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs10K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs100K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs100K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs1M, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs1M, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 #############################################################################################################
@@ -197,26 +197,26 @@ print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs100, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs100, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs1K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs1K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs10K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs10K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs100K, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs100K, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv(higgs1M, predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv(higgs1M, predict_model='GPU'))
 end = (time.time() - start_time)*1000
 print(end)
