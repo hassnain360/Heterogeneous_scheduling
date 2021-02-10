@@ -97,6 +97,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import RepeatedStratifiedKFold
 from xgboost import XGBRFClassifier
 from numpy import asarray
+impoty pandas as pd
 
 '''col_names = ['label'] + ["col-{}".format(i) for i in range(2, 30)]  # Assign column names
 dtypes_ls = ['int32'] + ['float32' for _ in range(2, 30)]           # Assign dtypes to each column
