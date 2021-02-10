@@ -91,6 +91,7 @@ print("Are the predictions for xgboost and FIL the same : " ,   array_equal(trai
 #################################################################################################################
 
 from numpy import mean
+import numpy as np
 from numpy import std
 from sklearn.datasets import make_classification
 from sklearn.model_selection import cross_val_score
@@ -98,6 +99,7 @@ from sklearn.model_selection import RepeatedStratifiedKFold
 from xgboost import XGBRFClassifier
 from numpy import asarray
 import pandas as pd
+
 
 '''col_names = ['label'] + ["col-{}".format(i) for i in range(2, 30)]  # Assign column names
 dtypes_ls = ['int32'] + ['float32' for _ in range(2, 30)]           # Assign dtypes to each column
