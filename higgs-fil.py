@@ -132,7 +132,7 @@ model = XGBRFClassifier(n_estimators=1, subsample=0.9, colsample_bynode=0.2)
 print('fitting...')
 model.fit(X_train, y_train)
 print('fitted !')
-trained_model_preds = model.predic(X_test)
+trained_model_preds = model.predict(X_test)
 
 model_path = './models/xgb.model'
 
