@@ -124,6 +124,25 @@ model = XGBRFClassifier(n_estimators=1, subsample=0.9, colsample_bynode=0.2)
 print('fitting...')
 model.fit(X_train, y_train)
 print('fitted !')
+trained_model_preds = model.predic(X_test)
+
+model_path = './models/xgb.model'
+
+model.save_model(model_path)
+
+fm = ForestInference.load(filename=model_path,
+                          algo='BATCH_TREE_REORG',
+                          output_class=True,
+                          threshold=0.50,
+                          model_type='xgboost')
+
+start_time = time.time()
+fil_preds = fm.predict(X_test)
+end = (time.time() - start_time)*1000
+print(end)
+
+print("The shape of predictions obtained from xgboost : ",(trained_model_preds).shape)
+print("The shape of predictions obtained from FIL : ",(fil_preds).shape)
+print("Are the predictions for xgboost and FIL the same : " ,   array_equal(trained_model_preds, fil_preds))
 
 
-print('The prediction is : ',model.predict(X_test))
