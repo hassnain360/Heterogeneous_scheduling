@@ -49,33 +49,33 @@ cu_rf = cuRF(**cu_rf_params)
 cu_rf.fit(X_train, y_train)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
@@ -93,33 +93,33 @@ cu_rf = cuRF(**cu_rf_params)
 cu_rf.fit(X_train, y_train)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
@@ -138,33 +138,33 @@ cu_rf = cuRF(**cu_rf_params)
 cu_rf.fit(X_train, y_train)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
@@ -182,32 +182,32 @@ cu_rf = cuRF(**cu_rf_params)
 cu_rf.fit(X_train, y_train)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs10K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs100K.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'), predict_model='GPU')
+pred = cu_rf.predict(cudf.read_csv('./datasets/higgs1M.csv').iloc[:,1:30].astype('float32'), predict_model='CPU')
 end = (time.time() - start_time)*1000
 print(end)

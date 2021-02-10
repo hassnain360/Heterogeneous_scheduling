@@ -1,37 +1,22 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0" # ONLY USE 1 GPU
 from cuml.ensemble import RandomForestClassifier as cuRF
 from sklearn.model_selection import train_test_split
 import cudf
 import time
 import numpy as np
 import pandas as pd
-from urllib.request import urlretrieve
-from cuml import ForestInference
+#from cuml import ForestInference
 
 col_names = ['label'] + ["col-{}".format(i) for i in range(2, 30)] # Assign column names
 dtypes_ls = ['int32'] + ['float32' for _ in range(2, 30)] # Assign dtypes to each column
-print('reading data, turning to cuDF')
-start_time = time.time()
 data = cudf.read_csv('HIGGS.csv', names=col_names, dtype=dtypes_ls)
-end = time.time()-start_time
-print('time taken to convert to cuDF: ', end)
 data.head().to_pandas()
-
 ###################################################################################################################
+
 X, y = data[data.columns.difference(['label'])].as_matrix(), data['label'].to_array() # Separate data into X and y
 del data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=1000000)
-
-x = []
-y =[]
-for j in range (10):
-    for i in range (1000000):
-        x.append(X_test[i])
-        y.append(y_test[i])
-
-X_test = np.array(x)
-y_test = np.array(y)
 
 print(X_train.shape, y_train.shape, X_test.shape, y_test.shape)
 
