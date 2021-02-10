@@ -41,7 +41,7 @@ print('trees: 1')
 
 cu_rf_params = {
             'n_estimators': 1,
-            'max_depth': 10000,
+            'max_depth': 32,
             }
 
 
@@ -85,7 +85,7 @@ print('trees: 32')
 
 cu_rf_params = {
             'n_estimators': 32,
-            'max_depth': 10000,
+            'max_depth': 32,
             }
 
 
@@ -130,7 +130,7 @@ print('trees: 64')
 
 cu_rf_params = {
             'n_estimators': 64,
-            'max_depth': 10000,
+            'max_depth': 32,
             }
 
 
@@ -174,7 +174,7 @@ print('trees: 128')
 
 cu_rf_params = {
             'n_estimators': 128,
-            'max_depth': 10000,
+            'max_depth': 32,
             }
 
 
