@@ -117,13 +117,19 @@ X = data.iloc[:, 1:30].astype(np.float32) # Get data columns.  Must be float32 f
 y = data.iloc[:, 0 ].astype('category').cat.codes # Get labels column.  Will convert to int32'''
 
 
-X_train = pd.read_csv("HIGGS.csv", nrows = 10000000, header = None) # using 10M as training set
+X_train = pd.read_csv("HIGGS.csv", nrows = 1000, header = None) # using 10M as training set
 y_train = np.int8(X_train[0])
 X_train = np.asarray(X_train.drop([0], axis = 1))
 
-X_test = pd.read_csv("HIGGS.csv", skiprows =  10000000, header = None) # using 1M as testing set
+X_test = pd.read_csv("HIGGS.csv", skiprows =  10999900, header = None) # using 1M as testing set
 y_test = np.int8(X_test[0])
 X_test = np.asarray(X_test.drop([0], axis=1))
+
+X_test = X_test.astype(np.float32)
+X_train = X_train.astype(np.float32)
+y_train = y_train.astype(np.float32)
+y_test = y_test.astype(np.float32)
+
 
 # evaluate xgboost random forest algorithm for classification
 
