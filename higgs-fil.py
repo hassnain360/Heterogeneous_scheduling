@@ -98,17 +98,21 @@ from sklearn.model_selection import RepeatedStratifiedKFold
 from xgboost import XGBRFClassifier
 from numpy import asarray
 
-col_names = ['label'] + ["col-{}".format(i) for i in range(2, 30)]  # Assign column names
+'''col_names = ['label'] + ["col-{}".format(i) for i in range(2, 30)]  # Assign column names
 dtypes_ls = ['int32'] + ['float32' for _ in range(2, 30)]           # Assign dtypes to each column
 data = cudf.read_csv('HIGGS.csv', names=col_names, dtype=dtypes_ls)
 
 X = data.iloc[:, 1:30].astype(np.float32) # Get data columns.  Must be float32 for our Classifier
-y = data.iloc[:, 0 ].astype('category').cat.codes # Get labels column.  Will convert to int32
+y = data.iloc[:, 0 ].astype('category').cat.codes # Get labels column.  Will convert to int32'''
 
 
-# split the dataset into training and validation splits
-X_train, X_test, y_train, y_test = cu_train_test_split(X, y, test_size = 1000000)
+X_train = pd.read_csv("HIGGS.csv", nrows = 10000000, header = None) # using 10M as training set
+y_train = np.int8(X_train[0])
+X_train = np.asarray(X_train.drop([0], axis = 1))
 
+X_test = pd.read_csv("HIGGS.csv", skiprows =  10000000, header = None) # using 1M as testing set
+y_test = np.int8(X_test[0])
+X_test = np.asarray(X_test.drop([0], axis=1))
 
 # evaluate xgboost random forest algorithm for classification
 
