@@ -15,7 +15,7 @@ data = cudf.read_csv('HIGGS.csv', names=col_names, dtype=dtypes_ls)
 X = data.iloc[:, 1:30].astype(np.float32) # Get data columns.  Must be float32 for our Classifier
 y = data.iloc[:, 0 ].astype('category').cat.codes # Get labels column.  Will convert to int32
 
-X_train, X_test, y_train, y_test = cu_train_test_split(X, y, test_size = 1000000)sss
+X_train, X_test, y_train, y_test = cu_train_test_split(X, y, test_size = 1000000)
 
 '''
 while (len(X_test)<10000000):
@@ -65,27 +65,27 @@ print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(higgs100, predict_model='GPU'))
+pred = cu_rf.predict(higgs100, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs1K, predict_model='GPU'))
+pred = cu_rf.predict(higgs1K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs10K, predict_model='GPU'))
+pred = cu_rf.predict(higgs10K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs100K, predict_model='GPU'))
+pred = cu_rf.predict(higgs100K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs1M, predict_model='GPU'))
+pred = cu_rf.predict(higgs1M, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
@@ -109,27 +109,27 @@ print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(higgs100, predict_model='GPU'))
+pred = cu_rf.predict(higgs100, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs1K, predict_model='GPU'))
+pred = cu_rf.predict(higgs1K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs10K, predict_model='GPU'))
+pred = cu_rf.predict(higgs10K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs100K, predict_model='GPU'))
+pred = cu_rf.predict(higgs100K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs1M, predict_model='GPU'))
+pred = cu_rf.predict(higgs1M, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 #############################################################################################################
@@ -153,27 +153,27 @@ print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(higgs100, predict_model='GPU'))
+pred = cu_rf.predict(higgs100, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs1K, predict_model='GPU'))
+pred = cu_rf.predict(higgs1K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs10K, predict_model='GPU'))
+pred = cu_rf.predict(higgs10K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs100K, predict_model='GPU'))
+pred = cu_rf.predict(higgs100K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs1M, predict_model='GPU'))
+pred = cu_rf.predict(higgs1M, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 #############################################################################################################
@@ -197,26 +197,26 @@ print(end)
 
 
 start_time = time.time()
-pred = cu_rf.predict(higgs100, predict_model='GPU'))
+pred = cu_rf.predict(higgs100, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs1K, predict_model='GPU'))
+pred = cu_rf.predict(higgs1K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs10K, predict_model='GPU'))
+pred = cu_rf.predict(higgs10K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs100K, predict_model='GPU'))
+pred = cu_rf.predict(higgs100K, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
 
 start_time = time.time()
-pred = cu_rf.predict(higgs1M, predict_model='GPU'))
+pred = cu_rf.predict(higgs1M, predict_model='GPU')
 end = (time.time() - start_time)*1000
 print(end)
