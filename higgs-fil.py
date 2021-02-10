@@ -90,8 +90,16 @@ print("Are the predictions for xgboost and FIL the same : " ,   array_equal(trai
 '''
 #################################################################################################################
 
-from numpy import mean
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import numpy as np
+from cuml.test.utils import array_equal
+from cuml.utils.import_utils import has_xgboost
+from cuml import ForestInference
+from cuml.preprocessing.model_selection import train_test_split as cu_train_test_split
+import time
+from sklearn.metrics import accuracy_score
+from numpy import mean
 from numpy import std
 from sklearn.datasets import make_classification
 from sklearn.model_selection import cross_val_score
