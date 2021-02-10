@@ -22,6 +22,13 @@ y_test = y_test.astype(np.float32)
 #X_train = X_train.astype(np.float32)
 #y_train = y_train.astype(np.float32)
 
+X_test[:1].to_csv('./datasets/higgs1.csv')
+X_test[:100].to_csv('./datasets/higgs100.csv')
+X_test[:1000].to_csv('./datasets/higgs1K.csv')
+X_test[:10000].to_csv('./datasets/higgs10K.csv')
+X_test[:100000].to_csv('./datasets/higgs100K.csv')
+X_test[:1000000].to_csv('./datasets/higgs1M.csv')
+
 
 #################################################################################################
 
@@ -29,7 +36,7 @@ y_test = y_test.astype(np.float32)
 print("1 Tree.")
 #model.fit(X_train, y_train)
 model_path = './models/xgb1'
-#model.save_model(model_path)
+model.save_model(model_path)
 fm = ForestInference.load(filename=model_path,
                           algo='BATCH_TREE_REORG',
                           output_class=True,
@@ -77,7 +84,7 @@ print(end)
 print("32 Trees")
 #model.fit(X_train, y_train)
 model_path = './models/xgb32'
-#model.save_model(model_path)
+model.save_model(model_path)
 fm = ForestInference.load(filename=model_path,
                           algo='BATCH_TREE_REORG',
                           output_class=True,
@@ -124,7 +131,7 @@ print(end)
 print("64 Trees")
 #model.fit(X_train, y_train)
 model_path = './models/xgb64'
-#model.save_model(model_path)
+model.save_model(model_path)
 fm = ForestInference.load(filename=model_path,
                           algo='BATCH_TREE_REORG',
                           output_class=True,
@@ -171,7 +178,7 @@ print(end)
 print("128 Trees")
 #model.fit(X_train, y_train)
 model_path = './models/xgb128'
-#model.save_model(model_path)
+model.save_model(model_path)
 fm = ForestInference.load(filename=model_path,
                           algo='BATCH_TREE_REORG',
                           output_class=True,
