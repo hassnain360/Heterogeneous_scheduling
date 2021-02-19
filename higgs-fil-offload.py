@@ -29,7 +29,7 @@ y_test = y_test.astype(np.float32)
 print("1 Tree.")
 #model.fit(X_train, y_train)
 model_path = './models/xgb1'
-model.save_model(model_path)
+#model.save_model(model_path)
 fm = ForestInference.load(filename=model_path,
                           algo='BATCH_TREE_REORG',
                           output_class=True,
@@ -77,7 +77,7 @@ print(end)
 print("32 Trees")
 #model.fit(X_train, y_train)
 model_path = './models/xgb32'
-model.save_model(model_path)
+#model.save_model(model_path)
 fm = ForestInference.load(filename=model_path,
                           algo='BATCH_TREE_REORG',
                           output_class=True,
@@ -124,7 +124,7 @@ print(end)
 print("64 Trees")
 #model.fit(X_train, y_train)
 model_path = './models/xgb64'
-model.save_model(model_path)
+#model.save_model(model_path)
 fm = ForestInference.load(filename=model_path,
                           algo='BATCH_TREE_REORG',
                           output_class=True,
@@ -171,7 +171,7 @@ print(end)
 print("128 Trees")
 #model.fit(X_train, y_train)
 model_path = './models/xgb128'
-model.save_model(model_path)
+#model.save_model(model_path)
 fm = ForestInference.load(filename=model_path,
                           algo='BATCH_TREE_REORG',
                           output_class=True,
