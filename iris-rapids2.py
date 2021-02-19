@@ -3,7 +3,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import cudf
 from cuml.ensemble import RandomForestClassifier as RandomForestClassifier
 from cuml.preprocessing.model_selection import train_test_split as cu_train_test_split
-import numpy as npclear
+import numpy as np
 import time
 # data link: https://gist.githubusercontent.com/curran/a08a1080b88344b0c8a7/raw/639388c2cbc2120a14dcf466e85730eb8be498bb/iris.csv
 
