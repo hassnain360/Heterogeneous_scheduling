@@ -53,20 +53,20 @@ We do this on the CloudLab Clemson ibm8335 node, which has:
 ---
 ## Todo:
 - **2/25/2021**:
-    - Explore Libraries for CPU/GPU/FPGAs and list them in a table.
-    - Explore Use cases for these libraries.
-    - Look into other datasets for RF and generally as well. See difference b/w typical RF datasets.
-    - Look into XGBoost. Run some experiments and Compare with TreeLite and RAPIDS generated Models.
-    - Look how RAPIDS works internally. Main question to answer: Why constant inference times for 1 - 1M input dataset sizes.
+    * [x] Explore Libraries for CPU/GPU/FPGAs and list them in a table.
+    * [] Explore Use cases for these libraries.
+    * [] Look into other datasets for RF and generally as well. See difference b/w typical RF datasets.
+    * [] Look into XGBoost. Run some experiments and Compare with TreeLite and RAPIDS generated Models.
+    * [] Look how RAPIDS works internally. Main question to answer: Why constant inference times for 1 - 1M input dataset sizes.
         -   https://www.youtube.com/watch?v=pXnEniQRAdQ&t=1265s
         -   https://www.youtube.com/watch?v=lV7rtDW94do
         -   https://www.youtube.com/watch?v=ZRIjLzsZ2Pc
-    - Talk to Saiful regarding NVProf and HW performance counters.
+    * [] Talk to Saiful regarding NVProf and HW performance counters.
         - HW Counters
         - Memory Divergence
         - Branch Divergence
         - Other Counters and Metrics that can be useful.
-    - See if I can use Colab as a verification environment for replication of trends in results. 
+    * [] See if I can use Colab as a verification environment for replication of trends in results. 
         -   See what libraries can be used on Colab.
 
 ---
