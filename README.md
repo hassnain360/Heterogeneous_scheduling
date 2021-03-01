@@ -23,13 +23,9 @@ We do this on the CloudLab Clemson ibm8335 node, which has:
 |**FPGA**| One ADM-PCIE-KU3 (Xilinx Kintex UltraScale)
 
 
-<br>We currently have the following libraries installed we can work with:  
--   CPU : 
--   GPU : 
--   FPGA: 
 ---
 
-## ML Models Under Consideration: 
+## ML Models Under Consideration (Tentative): 
 
 ### Classical Machine Learning
 
@@ -43,6 +39,22 @@ We do this on the CloudLab Clemson ibm8335 node, which has:
 ### Deep Learning Models
 
 
+
+---
+
+## ML Libraries for our Setup
+
+|              | Header 1        | Header 2                       || Header 3                       ||
+|              | Subheader 1     | Subheader 2.1  | Subheader 2.2  | Subheader 3.1  | Subheader 3.2  |
+|==============|-----------------|----------------|----------------|----------------|----------------|
+| Row Header 1 | 3row, 3col span                                 ||| Colspan only                   ||
+| Row Header 2 |       ^                                         ||| Rowspan only   | Cell           |
+| Row Header 3 |       ^                                         |||       ^        | Cell           |
+| Row Header 4 |  Row            |  Each cell     |:   Centered   :| Right-aligned :|: Left-aligned  |
+:              :  with multiple  :  has room for  :   multi-line   :    multi-line  :  multi-line    :
+:              :  lines.         :  more text.    :      text.     :         text.  :  text.         :
+|--------------|-----------------|----------------|----------------|----------------|----------------|
+[Caption Text]
 
 ---
 ## Datasets Under Consideration: 
