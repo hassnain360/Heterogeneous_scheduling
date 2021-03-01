@@ -44,17 +44,18 @@ We do this on the CloudLab Clemson ibm8335 node, which has:
 
 ## ML Libraries for our Setup
 
-|              | Header 1        | Header 2                       || Header 3                       ||
+
+| Caption Text |                 |                |                |                |                |
+|--------------|-----------------|----------------|----------------|----------------|----------------|
+|              | Header 1        | Header 2       |        <       | Header 3       |        <       |
 |              | Subheader 1     | Subheader 2.1  | Subheader 2.2  | Subheader 3.1  | Subheader 3.2  |
 |==============|-----------------|----------------|----------------|----------------|----------------|
-| Row Header 1 | 3row, 3col span                                 ||| Colspan only                   ||
-| Row Header 2 |       ^                                         ||| Rowspan only   | Cell           |
-| Row Header 3 |       ^                                         |||       ^        | Cell           |
+| Row Header 1 | 3row, 3col span |       <        |        <       | Colspan only   |        <       |
+| Row Header 2 |       ^         |       <        |        <       | Rowspan only   | Cell           |
+| Row Header 3 |       ^         |       <        |        <       |       ^        | Cell           |
 | Row Header 4 |  Row            |  Each cell     |:   Centered   :| Right-aligned :|: Left-aligned  |
-:              :  with multiple  :  has room for  :   multi-line   :    multi-line  :  multi-line    :
-:              :  lines.         :  more text.    :      text.     :         text.  :  text.         :
-|--------------|-----------------|----------------|----------------|----------------|----------------|
-[Caption Text]
+|.            .|. with multiple .|. has room for .|.  multi-line  .|.   multi-line .|. multi-line   .|
+|.            .|. lines.        .|. more text.   .|.     text.    .|.        text. .|. text.        .|
 
 ---
 ## Datasets Under Consideration: 
